@@ -1,6 +1,6 @@
-# profile
+# Profile
 
-A new Flutter project.
+A flutter that diaplays my Profile picture, name and a link to my github profile
 
 ## Getting Started
 
