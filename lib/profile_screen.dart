@@ -70,11 +70,27 @@ class ProfileScreen extends StatelessWidget {
                         ..loadRequest(Uri.parse('https://github.com/vicsam'))),
                 ));
           },
-          child: SvgPicture.asset(
-            'assets/github.svg',
-            height: 24,
+          child: Column(
+            children: [
+              SvgPicture.asset(
+                'assets/github.svg',
+                height: 24,
+                //width: 14,
+              ),
+              // SizedBox(),
+              SizedBox(
+                // width: 1,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                  child: Text(
+                    'Link to Github',
+                    style: TextStyle(fontSize: 10),
+                  ),
+                ),
+              ),
+            ],
           ),
-          tooltip: 'Githb Link',
+          tooltip: 'Link to Github',
         ),
       ),
     );
